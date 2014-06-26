@@ -31,6 +31,11 @@ class WallController < ApplicationController
     end
   end
   
+  def write_comment
+    @post_comment = Post.find(params[:id])    
+  end
+
+  
   def posts
     @posts=Post.all
   end

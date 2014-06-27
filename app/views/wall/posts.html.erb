@@ -4,8 +4,15 @@
   <a href="/user/signup">sign up</a> <a href="/user/login">log in</a>
   <% else %>
   <a href="/user/logout">log out</a>
+  <br>
+  I am <span style="color:red;"><%=User.find(cookies[:user_id]).username%></span>
+  <br>
+  My password is <span style="color:red;"><%=User.find(cookies[:user_id]).password%></span>
   <% end %>
 </div>
+
+
+
 
 <div style="background-color: #e9eaed;">
 	<h1>Recent Posts</h1>

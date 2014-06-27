@@ -2,6 +2,7 @@ Timeline::Application.routes.draw do
   get "user/signup"
   post "user/signup_complete"
   get "user/login"
+  post "user/login_complete"
   get "wall/write" => 'wall#write'
   get "wall/posts" => 'wall#posts'
   post "wall/write_complete"
